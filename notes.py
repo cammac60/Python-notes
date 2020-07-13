@@ -58,3 +58,68 @@ first_list = ["eggs", "milk", "coffee", "flour"]
 print(first_list[0])
 
 # Output: "eggs"
+
+# Grab a portion of the array like so:
+
+print(first_list[0:3])
+
+# Output: ["eggs", "milk", "coffee"]
+
+# First number represents starting point, second represents ending point. The end point will not be included in the return value so the example above grabs the items from index 0 to 2.
+
+# Use the append method to add an item to the end of the array
+# Ex:
+
+first_list.append("grapes")
+
+print(first_list)
+
+# Output: ["eggs", "milk", "coffee", "flour", "grapes"]
+
+# Use bracket notation to re-assign an index
+
+# Ex:
+
+first_list[0] = "kiwis"
+
+print(first_list)
+
+# Output:  ["kiwis", "milk", "coffee", "flour", "grapes"]
+
+# To remove an item from the array, use the del method
+
+# Ex:
+
+del first_list[0]
+
+print(first_list)
+
+# Output: ["milk", "coffee", "flour", "grapes"]
+
+# To see the amount of items in an array, use the len function
+
+# Ex:
+
+print(len(first_list))
+
+# Output: 4
+
+# To add two arrays together, simply use the + operator
+
+# Ex:
+
+second_list = ["bread", "cheese"]
+
+print(first_list + second_list)
+
+# Output: ["milk", "coffee", "flour", "grapes", "bread", "cheese"]
+
+# Use the max and min fn to find the max and min of a list
+
+# Ex:
+
+number_list = [1, 44, 5, 87, 3]
+
+print(max(number_list), min(number_list))
+
+# Output: 87, 1
