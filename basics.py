@@ -8,7 +8,9 @@ first_var = "varibale"
 
 second_var, third_var = 3, 4
 
-#-------------------------------------------
+
+#-------------------------------------------------------------------------------
+
 
 # CONSOLE LOG/PRINT
 # Print to the console using:
@@ -19,7 +21,9 @@ print("Insert a string or a var")
 print("multiple things seperated by commas", first_var)
 # Output: "multiple things seperated by commas" "variable"
 
-#-------------------------------------------
+
+#-------------------------------------------------------------------------------
+
 
 # CONCATINATION/PLACEHOLDERS
 # A placeholder can be set using the % symbol followed by a letter in a string (%s for string, %d for num)
@@ -45,7 +49,9 @@ second_string = "%s is learning python version %d"
 
 print(second_string%("Cameron", 3))
 
-#-------------------------------------------
+
+#-------------------------------------------------------------------------------
+
 
 # LISTS/ARRAYS
 
@@ -123,3 +129,65 @@ number_list = [1, 44, 5, 87, 3]
 print(max(number_list), min(number_list))
 
 # Output: 87, 1
+
+
+#-------------------------------------------------------------------------------
+
+
+# OBJECTS/DICTIONARIES
+
+# Var Ex:
+
+students = {"Bob":34, "Tim":26, "Sarah":41}
+
+# Access using bracket notation
+# *If multiple keys have the same name, python will return the last one in the object when accessing
+
+# Ex:
+
+print(students["Bob"])
+
+# Output: 34
+
+# Re-assign:
+
+students["Tim"] = 27
+
+print(students["Tim"])
+
+# Output: 27
+
+# Removing Elements:
+
+del students["Bob"]
+
+print(students)
+
+# Output: {"Tim":27, "Sarah":41}
+
+# Find length:
+
+print(len(students))
+
+# Output: 2
+
+
+#-------------------------------------------------------------------------------
+
+
+# TUPLES
+
+# The same as lists/arrays but immutable.
+
+# Declaration:
+
+first_tup = (1, 2, 3, 4, 5)
+
+# Tuples can still be added together or spliced
+# Tuples can still be deleted using the del method
+
+
+#-------------------------------------------------------------------------------
+
+
+# CONDITIONALS
