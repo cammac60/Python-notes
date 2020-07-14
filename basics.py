@@ -391,7 +391,7 @@ float(1) # = 1.0
 #-------------------------------------------------------------------------------
 
 
-# OOP
+# OOP/CLASSES
 
 # Use the class keyword to define a class
 
@@ -428,3 +428,35 @@ city1 = City("Denver", "USA")
 
 city1.get_name()
 city1.get_country()
+
+
+#-------------------------------------------------------------------------------
+
+
+# INHERITANCE
+
+
+class Parent:
+    def __init__(self):
+        print("This is the parent class")
+    def parent_fn(self):
+        print("This is the parent fn")
+    def same_name(self):
+        print("parent")
+
+# To create a child class, simply pass the parent class as a param when you create the child class:
+
+class Child(Parent):
+    def __init__(self):
+        print("This is the child class")
+    def child_fn(self):
+        print("This this the child fn")
+    def same_name(self):
+        print("child")
+
+c = Child()
+
+# methods from both the parent and child class can be called on the var class c
+# If two methods in the parent and child classes share the same name (ex: same_name ^^^) the child's method will replace the parents when a child is instantiated.
+
+c.same_name() # returns child
