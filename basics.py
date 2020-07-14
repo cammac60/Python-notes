@@ -344,3 +344,45 @@ print(sum)
 
 
 # IN-BUILT FUNCTIONS
+
+# abs returns absolute
+
+# both examples will return 34:
+
+abs(-34)
+abs(34)
+
+# bool returns false if 0 or true if anything else
+
+bool(0) #false
+bool(100) #true
+
+# dir returns all in build methods that can be used on the specific data
+
+dir("Hello") # returns all methods that are usable on a string
+
+# help method gives you more info on what the method will do when called on a specific piece of data:
+
+random_var = "hello"
+
+help(random_var.upper)
+
+# this will return some info on what the upper method will do when called on random_var
+
+# eval takes strings and runs them as if they were python code:
+
+print_str = 'print("hi")'
+
+eval(print_str)
+
+# Prints hi
+
+# *Use single quotations if the string needs to contain double quotes
+
+# exec() works the same as eval but is used for more complex multi-line code
+
+# int(), float(), and str() are used for converting datatypes
+
+int("1") # = 1
+str(1) # = "1"
+float(1) # = 1.0
