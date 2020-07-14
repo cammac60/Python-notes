@@ -191,3 +191,105 @@ first_tup = (1, 2, 3, 4, 5)
 
 
 # CONDITIONALS
+
+# Ex:
+
+if (5 > 3):
+    print("true")
+
+if (3 < 1):
+    print("true")
+else:
+    print("false")
+
+if (3 == 3):
+    print("true")
+
+# Output: true, false, true
+# Use elif to add additional if statments
+# and replaces &&
+# or replaces ||
+
+age = 25
+
+if (age < 13):
+    print("You can't see this PG-13 movie")
+elif (age >= 13 and age < 18):
+    print("You can see PG-13 but nor R")
+else:
+    print("You can see whatever you want")
+
+# Output: "You can see whatever you want"
+
+
+#-------------------------------------------------------------------------------
+
+
+# FOR LOOPS:
+
+list1 = ["apple", "orange", "cherry"]
+
+for item in list1:
+    print(item)
+
+# Output: "apple", "orange", "cherry"
+
+for i in range(0, 3):
+    print(i)
+
+# Output 0, 1, 2
+
+# To increment by a certain amount, add an incementor as the third arg of orange
+
+# Ex:
+
+for i in range(0, 10, 2):
+    print(i)
+
+# Output: 0, 2, 4, 6, 8
+
+# Can be nested:
+
+for i in range(0, 10, 2):
+    for j in range(0, 6):
+        print(i -j)
+
+
+#-------------------------------------------------------------------------------
+
+
+# WHILE LOOPS
+
+num = 3
+
+while num <= 5:
+    print(num)
+    num = num + 1
+
+# Output: 3, 4, 5
+
+# Use break to end loop
+
+num = 3
+
+while num < 6:
+    print(num)
+    if (num == 4):
+        break
+    num = num + 1
+
+# Use continue to stay in loop (In the example below, continue will skip on 3 and go back into the loop without running the print statement on the line below)
+
+num = 0
+
+while num < 6:
+    num = num + 1
+    if (num == 3):
+        continue
+    print(num)
+
+# Output: 1, 2, 4, 5, 6
+# Use pass as a filler statement. For example, if you know you need an if statement but aren't sure what needs to go inside of it yet.
+
+
+#-------------------------------------------------------------------------------
