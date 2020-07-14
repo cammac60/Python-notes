@@ -310,3 +310,37 @@ except:
 
 
 # FUNCTIONS
+
+# Use def keyword to define methods followed by method name and parens for args. (Empty parens for no args)
+
+# Ex:
+
+def hello_world():
+    print("Hello world!")
+
+# Fns are called in the same way as JS:
+
+hello_world()
+
+def greeting(name):
+    print("Hi " + name + "!")
+
+greeting("Cameron")
+
+def add_nums(num1, num2):
+    print(num1 + num2)
+
+add_nums(2, 5)
+
+def return_num_sum(num1, num2):
+    return num1 + num2
+
+sum = return_num_sum(10, 50)
+
+print(sum)
+
+
+#-------------------------------------------------------------------------------
+
+
+# IN-BUILT FUNCTIONS
