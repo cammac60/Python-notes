@@ -365,7 +365,7 @@ dir("Hello") # returns all methods that are usable on a string
 
 random_var = "hello"
 
-help(random_var.upper)
+# help(random_var.upper)
 
 # this will return some info on what the upper method will do when called on random_var
 
@@ -386,3 +386,45 @@ eval(print_str)
 int("1") # = 1
 str(1) # = "1"
 float(1) # = 1.0
+
+
+#-------------------------------------------------------------------------------
+
+
+# OOP
+
+# Use the class keyword to define a class
+
+class Person:
+    pass
+
+# Methods defined within the class must have the self param passed:
+
+class Car:
+    def get_make(self):
+        print("Honda")
+    def get_model(self):
+        print("Accord")
+
+car1 = Car()
+
+car1.get_make() # prints Honda
+car1.get_model() # prints Accord
+
+# self essentially tells the interperator which object is performing the method
+
+# to create custom params for each instance use __init__ (two underscores on both sides)
+
+class City:
+    def __init__(self, name, country):
+        self.name = name
+        self.country = country
+    def get_name(self):
+        print("This city is called " + self.name)
+    def get_country(self):
+        print("This city is in " + self.country)
+
+city1 = City("Denver", "USA")
+
+city1.get_name()
+city1.get_country()
