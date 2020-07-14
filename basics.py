@@ -293,3 +293,20 @@ while num < 6:
 
 
 #-------------------------------------------------------------------------------
+
+
+# TRY/EXCEPT
+
+# Operates the same as try and catch in JS
+
+try:
+    if undefined_var == 3:
+        print("Hello")
+except:
+    print("The variable is undefined so we went into this block")
+
+
+#-------------------------------------------------------------------------------
+
+
+# FUNCTIONS
